@@ -4,7 +4,6 @@ using System.Text;
 
 namespace CoffeeNChill.Functions.Models
 {
-    // What the client sends in the request body
     public class MenuItemRequest
     {
         public string Category { get; set; } = string.Empty;
@@ -15,7 +14,6 @@ namespace CoffeeNChill.Functions.Models
         public bool IsAvailable { get; set; }
     }
 
-    // What we send back
     public class MenuItemResponse
     {
         public string Category { get; set; } = string.Empty;

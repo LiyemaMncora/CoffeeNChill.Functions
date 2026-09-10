@@ -6,12 +6,10 @@ using Azure.Data.Tables;
 
 namespace CoffeeNChill.Functions.Models
 {
-    // PartitionKey, RowKey, Timestamp and ETag are required exact names —
-    // the Azure SDK maps to them directly, so they skip our naming style.
     public class MenuItem : ITableEntity
     {
-        public string PartitionKey { get; set; } = string.Empty; // Category
-        public string RowKey { get; set; } = string.Empty;       // SKU / Item ID
+        public string PartitionKey { get; set; } = string.Empty;
+        public string RowKey { get; set; } = string.Empty;
         public DateTimeOffset? Timestamp { get; set; }
         public ETag ETag { get; set; }
 
